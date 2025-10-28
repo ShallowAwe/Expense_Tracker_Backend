@@ -19,6 +19,7 @@ export const create = async (req, res) => {
       description,
       merchant,
       date,
+      transactionType,
     });
 
     res.status(201).json(transaction);
