@@ -13,6 +13,7 @@ app.use(express.json()); // Parse JSON request bodies
 app.use(cors()); // Enable CORS for all origins
 app.use(helmet()); // Security middleware
 app.use(morgan("dev")); // Logging middleware
+ 
 
 // Basic route
 // app.get("/", (req, res) => {

@@ -1,6 +1,9 @@
-// models/index.js (or src/models/index.js)
+// src/models/index.js
+
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient({
+  log: ['error', 'warn'], // Log errors and warnings
+});
 
 export default prisma;
